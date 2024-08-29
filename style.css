@@ -1,0 +1,35 @@
+/* Reset some basic elements */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Basic styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1b1b;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically (if the container has a height) */
+    width: 30%;             /* Make the container full-width */
+    height: 100vh;  
+}
+
+#image-container img {
+    max-width: 100%;  /* Scale the image to fit within the container's width */
+    height: auto;     /* Maintain the aspect ratio */
+    display: block;   /* Remove the bottom gap caused by inline images */
+    filter: invert(100%);
+
+}
