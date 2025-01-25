@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+button.wallet-adapter-button-trigger {
+  @apply w-full h-16 flex flex-col justify-center items-center text-center bg-gradient-to-r from-[#32FECB] to-[#A2FF63] text-[#15151F] font-bold text-xl uppercase py-6 px-6 rounded-lg shadow-lg transition-all hover:scale-105 hover:shadow-xl active:scale-95;
+}
+
+.wallet-adapter-dropdown {
+  @apply w-full 
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
