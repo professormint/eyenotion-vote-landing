@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Connection,
   PublicKey,
   LAMPORTS_PER_SOL,
   StakeProgram,
@@ -102,7 +101,7 @@ const StakingComponent: React.FC = () => {
         toast.success(`Staked successfully! TX ID: ${truncateTxId(txid)}`);
       }
     } catch (error: any) {
-      toast.error(`Error staking SOL: ${error.message}`);
+      toast.error(`Error staking SOL: ${error.messag as string}`);
     } finally {
       setIsLoading(false);
     }
